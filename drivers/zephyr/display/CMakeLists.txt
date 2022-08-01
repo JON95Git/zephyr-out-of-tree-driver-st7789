@@ -1,0 +1,2 @@
+
+add_subdirectory_ifdef(CONFIG_ST7789V_NO_CS st7789v_no_cs)

@@ -1,0 +1,22 @@
+# ST7789V_NO_CS display driver configuration options
+
+menuconfig ST7789V_NO_CS
+	bool "ST7789V_no_cs display driver"
+	depends on SPI
+	help
+	  Enable driver for ST7789V_no_cs display driver.
+
+choice ST7789V_NO_CS_PIXEL_FORMAT
+	prompt "Color pixel format"
+	default ST7789V_NO_CS_RGB565
+	depends on ST7789V_NO_CS
+	help
+	  Specify the color pixel format for the ST7789V_no_cs display controller.
+
+config ST7789V_NO_CS_RGB888
+	bool "RGB888"
+
+config ST7789V_NO_CS_RGB565
+	bool "RGB565"
+
+endchoice

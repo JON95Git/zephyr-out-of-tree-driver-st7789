@@ -1,0 +1,4 @@
+
+if DISPLAY
+rsource "st7789v_no_cs/Kconfig"
+endif # DISPLAY
